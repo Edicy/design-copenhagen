@@ -688,7 +688,4 @@ body .add-article {
       }
 }
 textarea, input {outline: none;}
-.placeholder { color: #ccc !important }
-::-webkit-input-placeholder { color: #ccc !important }
-:-moz-placeholder { color: #ccc !important }
 html {  -webkit-text-size-adjust: none;	}
