@@ -387,6 +387,13 @@ color: #f2a600
 .form_error, .form_field_error {
 color: red;
 }
+.form_error, .form_notice {
+    font-size: 16px;
+    margin: 6px 0
+}
+.form_field_with_errors input, .form_field_with_errors textarea {
+    border: 1px solid red
+}
 .form_field_size_large, .form_field_size_medium, .form_field_size_small {
 width: 100%
 }
