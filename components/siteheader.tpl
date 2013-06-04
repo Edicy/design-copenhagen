@@ -5,22 +5,13 @@
 	<meta name="author" content="{{ site.author }}" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     {% if site.search.enabled %}{% stylesheet_link "assets/site_search/3.0/style.css?1" static_host="true" %}{% endif %}
-	{% stylesheet_link "style.css?copenhagen" %}
+	{% stylesheet_link "style.css?copenhagen1" %}
 	{% stylesheet_link "museo_slab.css?copenhagen" %}
 <!--[if lt IE 7}>{% stylesheet_link "ie6.css?copenhagen" %}<![endif]-->
 	{% if editmode %}{% stylesheet_link "assets/admin/editmode.css" static_host="true" %}{% endif %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-{% if site.search.enabled %}
-    <script type="text/javascript" src="http://static.edicy.com/assets/site_search/3.0/site_search.js?1"></script>
-    <script type="text/javascript">
-        var edys_site_search_options = {
-            texts: { noresults: "{{ "search_noresults"|lc }}" },
-            default_stylesheet_enabled: false
-}
-</script>
-{% endif %}
 <!--[if IE 7]>
 <style type="text/css">
 .search-submit {visibility:hidden;}
@@ -61,3 +52,4 @@ input#onpage_search {
 </style>
 <![endif]-->
 <meta name="viewport" content="initial-scale=1" />
+<script src="{{ javascripts_path }}/modernizr.js"></script>

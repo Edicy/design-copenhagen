@@ -24,6 +24,23 @@
     <div id="body" class="clearfix">
       <div class="excerpt clearfix"> {% editable article.excerpt %} </div>
       <div class="article-body clearfix"> {% editable article.body %} </div>
+      
+      {% if editmode %}
+            <div class="cfx article-tags">
+                <div class="article-tag-icon"></div>
+                {% editable article.tags %}
+            </div>
+          {% else %}
+            {% unless article.tags == empty %}
+                <div class="cfx article-tags">
+                    <div class="article-tag-icon"></div>
+                    {% for tag in article.tags %}
+                        <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                    {% endfor %}
+                </div>
+            {% endunless %}
+        {% endif %}
+      
     </div>
     <div id="comment-box"> <a name="comments"></a>
       <div class="div_round clearfix">
@@ -32,7 +49,7 @@
       <ul>
         {% for comment in article.comments %}
         <li class="edy-site-blog-comment"> <span class="comment-author">{{comment.author}}</span> <span class="comment-date">{{comment.created_at | date:"%b.%d, %Y"}} {% removebutton %}</span>
-          <div class="comment-body"> {{comment.body}}</div>
+          <div class="comment-body"> {{comment.body_html}}</div>
         </li>
         {% endfor %}
       </ul>
