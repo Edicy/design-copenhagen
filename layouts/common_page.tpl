@@ -29,7 +29,7 @@
   <div id="body-slogan" class="clearfix">
    <h1>{% content name="slogan" %}</h1>
   </div>
-  <div id="body" class="left">
+  <div id="body" class="left" data-search-indexing-allowed="true">
    {% content %}
   </div>
   <div id="body-sidebar" class="left clearfix">

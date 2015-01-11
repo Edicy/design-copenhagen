@@ -22,8 +22,8 @@
   </div>
   <div id="blog-article" class="left">
     <div id="body" class="clearfix">
-      <div class="excerpt clearfix"> {% editable article.excerpt %} </div>
-      <div class="article-body clearfix"> {% editable article.body %} </div>
+      <div class="excerpt clearfix" data-search-indexing-allowed="true"> {% editable article.excerpt %} </div>
+      <div class="article-body clearfix" data-search-indexing-allowed="true"> {% editable article.body %} </div>
       
       {% if editmode %}
             <div class="cfx article-tags">
