@@ -98,7 +98,7 @@
       "filename": "header-tag.svg"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
+      "content_type": "font/eot",
       "file": "assets/museo_slab_100-webfont.eot",
       "kind": "assets",
       "filename": "museo_slab_100-webfont.eot"
@@ -110,7 +110,7 @@
       "filename": "museo_slab_100-webfont.svg"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
+      "content_type": "font/eot",
       "file": "assets/museo_slab_300-webfont.eot",
       "kind": "assets",
       "filename": "museo_slab_300-webfont.eot"
@@ -122,7 +122,7 @@
       "filename": "museo_slab_300-webfont.svg"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
+      "content_type": "font/eot",
       "file": "assets/museo_slab_500-webfont.eot",
       "kind": "assets",
       "filename": "museo_slab_500-webfont.eot"
